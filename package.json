@@ -1,8 +1,8 @@
 {
   "name": "vue-star-simple",
   "description": "简单的vue评分插件",
-  "version": "1.0.9",
-  "author": "hetingfeng <1019279855@qq.com>",
+  "version": "1.1.0",
+  "author": "FlySnails <1019279855@qq.com>",
   "main": "dist/vue-star-simple.js",
   "license": "MIT",
   "scripts": {

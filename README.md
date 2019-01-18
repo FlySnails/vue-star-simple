@@ -12,24 +12,19 @@ npm install vue-star-simple
 
 | prop | 描述 |  类型 | 默认值 |
 | :---: | :---: | :---: | :---: |
-| id | 当前评分的id（两个以上评分必传） |  String | - |
-| color | 五角星颜色 |  String | #4FDBE6 |
-
-##  Functions
-
-| name | 描述 | 
-| :---: | :---: | 
-| callBack | 返回当前评分id及分数 {id: 1, score: 5} |
+| value | 评分 |  String/Number | - |
+| showScore | 是否显示评分 |  Boolean | false |
+| color | 五角星颜色 |  String | #ff9900 |
 
 ##  Example
 
 ```
 <template>
-  <vue-simple-star 
-    :color="color" 
-    :id="id"                       
-    @callBack="callBack">          
-  </vue-simple-star>
+   <vue-star-simple
+      v-model="scroe"
+      show-score
+      :color="color">
+   </vue-star-simple>
 </template>
 
 <script>
@@ -40,7 +35,7 @@ npm install vue-star-simple
     data () {
       return {
         color: '#fff',
-        id: 1
+        scroe: 1
       }
     }
   }
